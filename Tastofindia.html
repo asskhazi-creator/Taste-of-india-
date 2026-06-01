@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Taste of India</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f0f0f;
+  color: white;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  background: #d32f2f;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  animation: slideDown 1s ease;
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1604908177522-0403b6b3d5b8') center/cover;
+  animation: fadeIn 2s ease;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  background: orange;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* MENU */
+.menu {
+  padding: 50px 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #d32f2f;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideDown {
+  from {transform: translateY(-100px);}
+  to {transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+🍛 Taste of India
+</header>
+
+<section class="hero">
+  <h1>Welcome to Authentic Indian Food</h1>
+  <p>Fresh • Spicy • Delicious</p>
+  <button onclick="orderNow()">Order Now</button>
+</section>
+
+<section class="menu">
+  <h2>Our Menu</h2>
+
+  <div class="cards">
+    <div class="card">🍗 Biryani</div>
+    <div class="card">🧀 Paneer Butter Masala</div>
+    <div class="card">🥞 Masala Dosa</div>
+    <div class="card">🍛 Dal Tadka</div>
+  </div>
+</section>
+
+<footer>
+© 2026 Taste of India | All Rights Reserved
+</footer>
+
+<script>
+function orderNow() {
+  alert("Order system abhi development me hai 🍽️");
+}
+</script>
+
+</body>
+</html>
